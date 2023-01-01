@@ -17,7 +17,7 @@ defmodule UnitConverterWeb.Router do
   scope "/", UnitConverterWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    live "/", Live.PageHome
   end
 
   # Other scopes may use custom stacks.
